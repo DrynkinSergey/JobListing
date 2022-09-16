@@ -209,8 +209,37 @@ body {
   flex-direction: column;
   gap: 3rem;
 }
-
+@media (min-width: 350px) {
+  .job-position-body{
+    align-items: flex-start;
+  }
+  .job-postion-company{
+    flex-direction: column;
+  }
+  .job-position-avatar {
+    position: static;
+    width: 50px;
+    height: 50px;
+  }
+  .stack{
+    gap:0.3rem;
+  }
+}
+@media (min-width: 600px) {
+.job-position-avatar{
+  position: static;
+  width: 100px;
+  height: 100px;
+}
+}
 @media (min-width: 1024px) {
+  .job-position-body {
+      align-items: center;
+    }
+  
+    .job-postion-company {
+      flex-direction: row;
+    }
   .header {
     background-image: url(./assets/images/bg-header-desktop.svg);
   }
