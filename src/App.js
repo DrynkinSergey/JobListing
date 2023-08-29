@@ -12,7 +12,7 @@ function App() {
 	const dispatch = useDispatch()
 	useEffect(() => {
 		dispatch(addPositions(data))
-	}, [])
+	}, [dispatch])
 	return (
 		<>
 			<TheHeader />
